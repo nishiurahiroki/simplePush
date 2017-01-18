@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+  <script type="text/javascript" src="./js/push.js"></script>
+
+  <!-- UIkit CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/js/uikit.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/uikit.min.css" />
+
+
+  <title>push通知サンプル</title>
+</head>
+<body>
+  <div class="uk-grid">
+    <div class="uk-width-large-1-1 .uk-visible-large">
+    </div>
+  </div>
+  <div class="uk-grid">
+    <div class="uk-width-1-6">
+    </div>
+    <div class="uk-width-1-6">
+    </div>
+    <div class="uk-width-4-6">
+      <label class="uk-text-large">push通知する内容を入力</label>
+      <form class="uk-form">
+        <textarea id="pushText" class="uk-textarea uk-form-width-large" rows="7"></textarea>
+      </form>
+      <p>
+        <button type="button" id="push" class="uk-icon-check uk-button uk-button-primary uk-button-large uk-width-1-6">送信</button>
+      </p>
+    </div>
+
+  </div>
+  <!-- modal dialog -->
+  <div id="checkDialog" class="uk-modal">
+      <div class="uk-modal-dialog">
+          <div class="uk-modal-header"></div>
+          push通知受付ました!
+          ネットサーフィンでもしつつ気長にお待ち下さい!v(^ ^ )
+          <div class="uk-modal-footer">
+            <div align="right">
+              <button id="confirmOk" class="uk-button uk-button-primary">Ok</button>
+            </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
